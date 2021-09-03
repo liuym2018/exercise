@@ -1,0 +1,48 @@
+.list {
+  margin-top: 3rem;
+  padding: 0 1rem;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+thead {
+  margin: 1rem 0;
+}
+
+th {
+  width: 33%;
+}
+
+td {
+  border-bottom: 1px solid #eaeaea;
+  border-top: 1px solid #eaeaea;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.table-header {
+  color: #1199ee;
+  font-size: 14px;
+  padding: 1rem 0;
+  font-weight: 600;
+}
+
+.time {
+  color: #1199ee;
+}
+.text {
+  color: #1199ee;
+}
+
+.text,
+.time {
+  font-size: 14px;
+  font-weight: 400;
+}

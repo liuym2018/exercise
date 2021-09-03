@@ -1,0 +1,63 @@
+.top {
+  padding: 0 1rem;
+}
+.body {
+  display: flex;
+}
+
+.input {
+  text-align: left;
+  width: 50%;
+}
+
+h1 {
+  margin: 0;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1199ee;
+}
+
+p {
+  margin: 0;
+}
+
+input {
+  width: 95%;
+  height: 32px;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #c7c7c7;
+}
+
+.add {
+  background-color: #1199ee;
+  border-radius: 8px;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  color: white;
+}
+
+.add:hover {
+  background-color: #0873b5;
+}
+
+.label {
+  color: #828282;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.header {
+  color: #1199ee;
+  font-size: 32px;
+  font-weight: 600;
+}

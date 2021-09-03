@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import { useEffect, useState, useRef } from 'react';
 import './App.css';
+import Eidt from './edit/edit';
+import List from './list/list';
 
 function App() {
+  const [data, setData] = useState([]);
+  const submitStatus = useRef(false);
+
+  useEffect(() => {
+    if (!submitStatus.current) {
+      return
+    }
+  }, [data])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Eidt add={setData} submitStatus={submitStatus} />
+      <List listData={data} submitStatus={submitStatus} />
     </div>
   );
 }
+
 
 export default App;
