@@ -15,8 +15,8 @@ const List = ({ listData }) => {
             <tbody>
                 {
                     listData.map((item) => {
-                        const { i, pay, newBalance, time } = item
-                        return <Item key={i} id={i} payment={pay} total={newBalance} time={time} />
+                        const { i, payment, newBalance, time } = item
+                        return <Item key={i} id={i} payment={payment} total={newBalance} time={time} />
                     })
                 }
             </tbody>

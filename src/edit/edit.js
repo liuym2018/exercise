@@ -27,8 +27,7 @@ const Eidt = ({ add, submitStatus }) => {
                 let time = '0' + newMonth + '/' + day + '/' + year;
                 let newBalance = total - payment;
                 total = newBalance;
-                let pay = '$' + payment;
-                details.push({ i, pay, newBalance, time });
+                details.push({ i, payment, newBalance, time });
             }
             return details;
         });

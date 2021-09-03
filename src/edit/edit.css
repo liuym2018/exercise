@@ -1,13 +1,26 @@
 .top {
   padding: 0 1rem;
 }
-.body {
-  display: flex;
-}
 
-.input {
-  text-align: left;
-  width: 50%;
+@media only screen and (max-width: 640px) {
+  .body {
+    display: grid;
+  }
+
+  .input {
+    text-align: left;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .body {
+    display: flex;
+  }
+
+  .input {
+    text-align: left;
+    width: 50%;
+  }
 }
 
 h1 {
