@@ -1,7 +1,4 @@
 const Item = ({ id, payment, total, time }) => {
-    console.log('total: ', total);
-    console.log('payemnt: ', payment);
-    console.log('id: ', id);
 
     return (
         <tr>

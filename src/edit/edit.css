@@ -2,25 +2,13 @@
   padding: 0 1rem;
 }
 
-@media only screen and (max-width: 640px) {
-  .body {
-    display: grid;
-  }
-
-  .input {
-    text-align: left;
-    width: 100%;
-  }
+.body {
+  display: flex;
 }
-@media only screen and (max-width: 1280px) {
-  .body {
-    display: flex;
-  }
 
-  .input {
-    text-align: left;
-    width: 50%;
-  }
+.input {
+  text-align: left;
+  width: 50%;
 }
 
 h1 {
@@ -73,4 +61,15 @@ input-placeholder {
   color: #1199ee;
   font-size: 32px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .body {
+    display: grid;
+  }
+
+  .input {
+    text-align: left;
+    width: 100%;
+  }
 }
